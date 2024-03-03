@@ -6,14 +6,6 @@ html, body {
 body{
 	background: $white;
 	
-	*{
-		
-	}
-    
-     @include media-breakpoint-down(lg) {
-         padding-bottom: 3rem;
-    }
-
 }
 
 h1{
@@ -44,8 +36,8 @@ h2{
 .btn, a{
 	transition: 0.6s opacity;
 	&:hover{
-		opacity: 0.7;
-		transition: 0.4s opacity;
+		opacity: 0.6;
+		transition: 0.5s opacity;
 	}
 }
 
@@ -123,7 +115,9 @@ h2{
 	}
 }
 
-
+.fs-16{
+	font-size: 1rem !important;
+}
 .fs-20{
 	font-size: 1.25rem !important;
 }
@@ -430,15 +424,7 @@ h2{
 		
 		position: relative;
 		input{
-			
-		
-		border-radius: 0.5rem;
-		padding: 0.5rem;
-		background: $white;
-		border: solid 1px $gray-600;
-		outline: none;
-		font-size: 1rem;
-		width: 100%;
+
 		padding-left: 40px;
 			
 		}
@@ -456,6 +442,123 @@ h2{
 			top: 50%;
 			transform: translateY(-50%);
 		}
+	}
+}
+
+
+input.search-input{
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	background: $white;
+	border: solid 1px $gray-600;
+	outline: none;
+	font-size: 1rem;
+	width: 100%;
+	color: $gray-900 !important;
+}
+
+button{
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	background: $black;
+	border: solid 1px $gray-600;
+	outline: none;
+	font-size: 1rem;
+	width: 100%;
+	color: $white !important;
+	transition : all 0.5s;
+	svg{
+		vertical-align: middle;
+		margin-left: 0.5rem;
+	}
+	&:hover{
+		background: $white;
+		color: $gray-900 !important;
+		transition : all 0.5s;	
+	}
+	&.send{
+		
+		span{
+			transition : all 0.5s;
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+			margin-left: 0.5rem;
+			background: escape-svg(url('data:image/svg+xml; utf8,  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.0902 3.64153C18.5633 1.95197 17.0065 0.395115 15.3169 0.868193L2.03343 4.58756C0.159399 5.11229 -0.209731 7.60765 1.43213 8.65247L6.71441 12.0139C6.80702 12.0729 6.88557 12.1514 6.9445 12.244L10.306 17.5263C11.3508 19.1682 13.8461 18.799 14.3709 16.925L18.0902 3.64153ZM15.7213 2.31264C16.2845 2.15495 16.8035 2.6739 16.6458 3.23709L12.9264 16.5206C12.7515 17.1452 11.9197 17.2683 11.5715 16.721L8.35402 11.665L11.746 8.27302C12.0389 7.98013 12.0389 7.50525 11.746 7.21236C11.4531 6.91947 10.9783 6.91947 10.6854 7.21236L7.29335 10.6044L2.23744 7.38698C1.69016 7.0387 1.8132 6.20692 2.43788 6.03201L15.7213 2.31264Z" fill="white"/></svg>'));
+			background-size: cover;
+			vertical-align: middle;
+			transition : all 0.5s;
+			margin-top: -2px;
+			
+		}
+		
+		&:hover{
+			
+			span{
+			transition : all 0.5s;
+			background: escape-svg(url('data:image/svg+xml; utf8,  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.0902 3.64153C18.5633 1.95197 17.0065 0.395115 15.3169 0.868193L2.03343 4.58756C0.159399 5.11229 -0.209731 7.60765 1.43213 8.65247L6.71441 12.0139C6.80702 12.0729 6.88557 12.1514 6.9445 12.244L10.306 17.5263C11.3508 19.1682 13.8461 18.799 14.3709 16.925L18.0902 3.64153ZM15.7213 2.31264C16.2845 2.15495 16.8035 2.6739 16.6458 3.23709L12.9264 16.5206C12.7515 17.1452 11.9197 17.2683 11.5715 16.721L8.35402 11.665L11.746 8.27302C12.0389 7.98013 12.0389 7.50525 11.746 7.21236C11.4531 6.91947 10.9783 6.91947 10.6854 7.21236L7.29335 10.6044L2.23744 7.38698C1.69016 7.0387 1.8132 6.20692 2.43788 6.03201L15.7213 2.31264Z" fill="#{$gray-900}"/></svg>'));
+			background-size: cover;
+			}
+		}
+	}
+}
+
+.btn{
+	text-decoration: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	background: $white;
+	color: $gray-900;
+	font-size: 1rem;
+	display: block;
+	border: solid 1px $white;
+	transition : all 0.5s;
+	text-align: center;
+	font-weight: 400;
+	span{
+		width: 7px;
+		height: 12px;
+		display: inline-block;
+		margin-left: 0.5rem;
+		background: escape-svg(url('data:image/svg+xml; utf8, <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.313134 0.313134C0.508396 0.117871 0.824978 0.117871 1.02024 0.313134L4.35357 3.64647C4.54884 3.84173 4.54884 4.15831 4.35357 4.35357L1.02024 7.68691C0.824978 7.88217 0.508396 7.88217 0.313134 7.68691C0.117871 7.49164 0.117871 7.17506 0.313134 6.9798L3.29291 4.00002L0.313134 1.02024C0.117871 0.824978 0.117871 0.508396 0.313134 0.313134Z" fill="#{$gray-900}"/></svg>'));
+		background-size: cover;
+		vertical-align: middle;
+		transition : all 0.5s;
+	}
+	&:hover{
+		background: transparent;
+		color: $white;
+		transition : all 0.5s;
+		
+		.arrow{
+			transition : all 0.5s;
+			background: escape-svg(url('data:image/svg+xml; utf8, <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.313134 0.313134C0.508396 0.117871 0.824978 0.117871 1.02024 0.313134L4.35357 3.64647C4.54884 3.84173 4.54884 4.15831 4.35357 4.35357L1.02024 7.68691C0.824978 7.88217 0.508396 7.88217 0.313134 7.68691C0.117871 7.49164 0.117871 7.17506 0.313134 6.9798L3.29291 4.00002L0.313134 1.02024C0.117871 0.824978 0.117871 0.508396 0.313134 0.313134Z" fill="#{$white}"/></svg>'));
+			background-size: cover;
+		
+		}
+	}
+	
+	
+	&.drop-down{
+		background: transparent;
+		color: $white;
+		position: relative;
+		display: inline-block;
+		padding-left: 1rem;
+		padding-right: 2.5rem;
+		&:after{
+				content: "";
+				display: inline-block;
+				width: 7px;
+				height: 12px;
+				background: escape-svg(url('data:image/svg+xml; utf8, <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.313134 0.313134C0.508396 0.117871 0.824978 0.117871 1.02024 0.313134L4.35357 3.64647C4.54884 3.84173 4.54884 4.15831 4.35357 4.35357L1.02024 7.68691C0.824978 7.88217 0.508396 7.88217 0.313134 7.68691C0.117871 7.49164 0.117871 7.17506 0.313134 6.9798L3.29291 4.00002L0.313134 1.02024C0.117871 0.824978 0.117871 0.508396 0.313134 0.313134Z" fill="#{$white}"/></svg>'));
+				background-size: cover;
+				transform:  translateY(-50%) rotate(90deg) ;
+				right: 1rem;
+				top: 50%;
+				position: absolute;
+				
+			}
 	}
 }
 
@@ -560,6 +663,11 @@ header{
 				transform: translate(-50%,-50%);
 				min-width: 100%;
 				min-height: 100%;
+				height: 100%;
+				@include media-breakpoint-up(sm) {
+					height: auto;
+				}
+				
 				filter: brightness(85%);
 
 			}
@@ -764,3 +872,276 @@ header{
 	}
 }
 
+
+.reassurance{
+	background: $gray-850;
+	*,a{
+		color: $white;
+	}
+	
+	.row{
+		@include row-cols(1);
+		
+		@include media-breakpoint-up(md) {
+		@include row-cols(2);
+		}
+		
+		@include media-breakpoint-up(lg) {
+		@include row-cols(5);
+ 		}
+	}
+	
+	a{
+		font-weight: 900;
+		text-decoration: none;
+		position: relative;
+		display: block;
+		padding-right: 3rem;
+		padding-left: 2.5rem;
+		margin: 0.7rem 0;
+		@include media-breakpoint-up(md) {
+			margin: 1.2rem 0;
+		}
+		@include media-breakpoint-up(lg) {
+			margin: 0rem;
+			padding-left: 0rem;
+		}
+		&:after {
+				display: inline-block;
+				content: "";
+				width: 7px;
+				height: 12px;
+				background: escape-svg(url('data:image/svg+xml; utf8, <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.313134 0.313134C0.508396 0.117871 0.824978 0.117871 1.02024 0.313134L4.35357 3.64647C4.54884 3.84173 4.54884 4.15831 4.35357 4.35357L1.02024 7.68691C0.824978 7.88217 0.508396 7.88217 0.313134 7.68691C0.117871 7.49164 0.117871 7.17506 0.313134 6.9798L3.29291 4.00002L0.313134 1.02024C0.117871 0.824978 0.117871 0.508396 0.313134 0.313134Z" fill="#{$white}"/></svg>'));
+				background-size: cover;
+				
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			right: 1rem;
+				@include media-breakpoint-up(md) {
+					right: 1.5rem;
+				}
+				@include media-breakpoint-up(lg) {
+				right: 2rem;
+				top: calc(24px + 0.8rem);
+					transform: none;
+				}
+			}
+		
+		
+		.icon{
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			@include media-breakpoint-up(lg) {
+			display: block;
+				position: relative;
+				transform: none;
+				top: auto;
+				left: auto;
+			}
+			img{
+				width: 24px;
+				height: auto;
+				margin-right: 1rem;
+				@include media-breakpoint-up(lg) {
+					width: auto;
+					height: 24px;
+					margin-bottom: 0.5rem;
+					margin-right: 0rem;
+				}
+			}
+		}
+	}
+}
+
+
+footer{
+	background: $black;
+	*,a{
+		color: $white;
+		text-decoration: none;
+		&:hover{
+			color: $white;
+		}
+	}
+	
+	.titre{
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 0.75rem;
+		position: relative;
+		margin-bottom: 1.75rem;
+		display: inline-block;
+		&:after{
+			content: "";
+			display: block;
+			height: 1px;
+			width: 200%;
+			border-bottom: solid 1.5px $gray-800;
+			position: absolute;
+			bottom: -0.5rem;
+			left: 0;
+		}
+	}
+	
+	.social{
+		@include media-breakpoint-up(lg) {
+			max-width: 280px;
+			margin: 0 auto;
+		}
+		.all-items{
+			img{
+				margin: 0 0.6rem;
+			}
+		}
+	}
+	
+	.redirection{
+		
+		@include media-breakpoint-up(lg) {
+		display: flex;
+    	justify-content: space-between;
+		}
+		
+		@include media-breakpoint-down(lg) {
+		.item-desktop{
+			display: block;
+			
+			.titre{
+				display: block;
+				cursor: pointer;
+				&:after{
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					left: auto;
+					bottom: auto;
+					transform: translateY(-50%);
+					background: escape-svg(url('data:image/svg+xml; utf8, <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.25C12.4142 5.25 12.75 5.58579 12.75 6L12.75 11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H12.75L12.75 18C12.75 18.4142 12.4142 18.75 12 18.75C11.5858 18.75 11.25 18.4142 11.25 18L11.25 12.75H6C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25H11.25L11.25 6C11.25 5.58579 11.5858 5.25 12 5.25Z" fill="#{$white}"/></svg>'));
+					background-size: cover;
+					border: none;
+				}
+				
+				&.opened{
+					margin-bottom: 1rem;
+					& + ul{ 
+						max-height: 1500px;
+						transition : 0.6s all;
+					}
+				}
+			}
+			
+			ul{
+				max-height: 0;
+				overflow: hidden;
+				transition : 0.6s all;
+			}
+		}
+		}
+		
+		.titre{
+			&:after{
+				width: 100%;
+			}
+		}
+		ul{
+			padding: 0;
+			list-style-type: none;
+			li{
+				margin-bottom: 1rem;
+				padding: 0;
+				a{
+					text-decoration: none;
+					font-size: 0.75rem;
+					
+					
+				}
+			}
+		}
+	}
+	
+	.info{
+		border-top: 1.5px solid $gray-800;
+		
+		.top{
+			.paiement{
+				padding-bottom: 1rem;
+				img{
+					width: 42px;
+					height: 24px;
+					margin-right: 0.5rem;
+					margin-bottom: 0.5rem;
+				}
+			}
+			
+			.livraison{
+				font-weight: 700;
+				img{
+					vertical-align: middle;
+					margin-right: 0.5rem;
+				}
+			}
+		}
+	}
+	
+	.avis-verif{
+		
+		flex-direction: row;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		
+		.rate-avis{
+			
+			.nb-rate{
+				span{
+					font-weight: 900;
+				&:first-child{
+					font-size: 2rem;
+					}
+				}
+				
+			}
+			.rating{
+				&.stars{
+					.base{
+						display: flex;
+					}
+					
+					position: relative;
+					.front{
+						position: absolute;
+						overflow: hidden;
+						top: 0;
+						left: 0;
+						.content{
+							width: fit-content;
+    						display: flex;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.utile{
+		ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li{
+				display: inline-block;
+				line-height: 2;
+				span{
+					color: $gray-600;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
