@@ -3,21 +3,21 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>BOBOCHIC</title>
+	<title>BOBOCHIC - Canapés, Literie, mobilier au design contemporain et à prix justes</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	
-	<meta name="description" content="BOBOCHIC associe avec panache du mobilier au design contemporain, confortables et fonctionnels ! Canapés, Literie, mobilier de Jardin à prix justes !" />
+	<meta name="description" content="BOBOCHIC associe avec panache du mobilier au design contemporain, confortable et fonctionnel ! Canapés, Literie, mobilier de Jardin à prix justes !" />
 	<meta name="robots" content="index,follow" />
 	<meta name="generator" content="PrestaShop" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	
-	<meta property="og:title" content="BOBOCHIC">
+	<meta property="og:title" content="BOBOCHIC - Canapés, Literie, mobilier au design contemporain et à prix justes">
 	<meta property="og:type" content="">
-	<meta property="og:description" content="BOBOCHIC associe avec panache du mobilier au design contemporain, confortables et fonctionnels ! Canapés, Literie, mobilier de Jardin à prix justes !">
+	<meta property="og:description" content="BOBOCHIC associe avec panache du mobilier au design contemporain, confortable et fonctionnel ! Canapés, Literie, mobilier de Jardin à prix justes !">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="">
 	<link rel="canonical" href="" />
@@ -33,7 +33,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css?280623">
+	<link rel="stylesheet" href="css/main.css?040324">
 
 	<meta name="theme-color" content="#000000">
 </head>
